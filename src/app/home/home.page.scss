@@ -1,27 +1,80 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: dotted 1px antiquewhite;
 }
 
-#container a {
-  text-decoration: none;
+#container{
+  background-color: var(--secondary-color);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculadora{
+  border: 5px solid var(--grey-color);
+  border-radius: 10px;
+  height: 80vh;
+  width: 50%;
+}
+
+.visor{
+  height: 30vh;
+  padding-right: 40px;
+
+}
+
+.conta{
+  color: var(--light-color);
+  height: 12vh;
+  font-size:2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.igual{
+  color: var(--light-color);
+  height: 2vh;
+  font-size:2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+
+.resultado{
+  color: var(--terciary-color);
+  height: 16vh;
+  font-size:2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+.guardaBotoes{
+  height: 50vh;
+  padding: 0vh 6vh;
+}
+
+.button{
+  color:antiquewhite;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao{
+  background: var(--primary-color);
+  width: 90%;
+  height: 6vh;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
